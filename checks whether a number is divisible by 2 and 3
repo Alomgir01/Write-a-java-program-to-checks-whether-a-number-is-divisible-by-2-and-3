@@ -1,0 +1,12 @@
+import java.util.Scanner;
+Public class HelloWorld {
+public static void main(String[] args) {
+Scanner input= new Scanner(System.in);
+System.out.print(&quot;Input a number: &quot;);
+int number=input.nextInt();
+System.out.println(&quot;Divisible by 2 and 3: &quot; + (input%2 == 0 &amp;&amp; input%3 == 0));
+System.out.println(&quot;Divisible by 2 or 3: &quot;+ (input%2 == 0 || input%3 == 0));
+System.out.println(&quot;Divisible by 2 or 3: &quot;+ ((input%2 == 0 || input%3 == 0) &amp;&amp; !(input%2 == 0 &amp;&amp;
+input%3 == 0)));
+}
+}
